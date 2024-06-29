@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="navigation">
+            <div class="nav-center container d-flex">
+                <a href="#" class="logo">
+                    <h1>Логотип</h1>
+                </a>
+
+                <ul class="nav-list d-flex">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Дом</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Товары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#FAQ" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Контакт</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <i class="bx bx-menu-alt-left"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <img src="https://www.downloadclipart.net/large/website-png-transparent.png" id="about" />
+            <h4>Добро пожаловать на официальный сайт компании <span>Название компании</span> 👋</h4>
+            <p class="subtitle">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, officia aliquid quo odit eveniet voluptas totam odio numquam molestias doloribus maxime debitis, fugiat non minus ipsam deserunt recusandae ut natus. Saepe eaque quisquam doloribus odit. Fugiat ipsum minus ducimus? Ex eum quod dolor, hic optio eius perspiciatis corrupti quos cumque.
+                <span>perspiciatis corrupti</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="section category">
+        <div class="cat-center">
+            <div class="cat">
+                <img src="https://katalog.parfenon.com/upload/iblock/2d3/c5sjqpmbzhhcnlrmn4vts4e4r1pofb01.jpg" alt="" />
+                <div>
+                    <p>каменные изделия</p>
+                </div>
+            </div>
+            <div class="cat">
+                <img src="https://volgakamni.ru/wa-data/public/shop/products/65/80/358065/images/49909/49909.750x0.jpg" alt="" />
+                <div>
+                    <p>изделия из камня</p>
+                </div>
+            </div>
+            <div class="cat">
+                <img src="https://yug-kamen.ru/image/but/but_galt_yellow.jpg" alt="" />
+                <div>
+                    <p>камни</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="section new-arrival">
+        <div class="title">
+            <h1>Новые товары</h1>
+            <p>Это самые новые товары в нашем магазине</p>
+        </div>
+
+        <div class="product-center" id="card__product_pos"></div>
+    </section>
+
+    <template id="card__product_pattern">
+        <section class="product-item">
+            <div class="product-thumb" id="section">
+                <div class="overlay">
+                    <img src="" alt="" />
+                    <span id="discount"></span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span id="catalog"></span>
+                <a id="name" style="cursor: pointer;"></a>
+                <h4 id="h4"></h4>
+            </div>
+        </section>
+    </template>
+
+    <script>
+        const user__location = "index"
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="row">
+            <div class="col d-flex">
+                <h4>INFORMATION</h4>
+                <a href="#">About us</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col d-flex">
+                <h4>USEFUL LINKS</h4>
+                <a href="#">Online Store</a>
+            </div>
+            <div class="col d-flex">
+                <span><i class='bx bxl-facebook-square'></i></span>
+                <span><i class='bx bxl-instagram-alt' ></i></span>
+                <span><i class='bx bxl-github' ></i></span>
+                <span><i class='bx bxl-twitter' ></i></span>
+                <span><i class='bx bxl-pinterest' ></i></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./js/database.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
